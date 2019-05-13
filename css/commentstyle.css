@@ -1,0 +1,97 @@
+@font-face {
+	font-family: Gochi;
+	src: url(font/gochi.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../icons/background.jpg);
+	font-family: Gochi, "Comic Sans MS", cursive;
+	font-size: 30px; 
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+		". logo ."
+		". comment .";
+}
+
+/*лого*/
+
+.logo {
+	grid-area: logo;
+	text-align: center;
+}
+
+.logo img {
+	height: 100px;
+	width: 100px;
+	margin-top: 10px;
+
+}
+
+.logo a {
+	margin-top: -10px;
+	text-decoration-line: none;
+	color: black;
+}
+
+.logo a:hover {
+	color: #657083;
+	transition: .5s;
+}
+
+.logo img:hover {
+	opacity: 0.6;
+}
+
+/*форма отзыва*/
+
+.comment {
+	grid-area: comment;
+	border: 5px solid #657083;
+	border-radius: 5px;
+	max-width: 500px;
+	margin-left: 8%;
+}
+
+.comment input[type=text] {
+	height: 50px;
+}
+
+.comment form {
+	padding: 10px;
+	text-decoration: none;
+}
+
+.comment h2 {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.comment fieldset {
+   border: 0 none;
+}
+
+button {
+	margin: 0 180px;
+	font-size: 20px;
+	font-family: Gochi, "Comic Sans MS", cursive;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	background: #657083;
+	transition: 0.2s;
+} 
+
+button:hover { 
+	background: #abc8d9; 
+}
+

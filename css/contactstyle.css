@@ -1,0 +1,148 @@
+@font-face {
+	font-family: Gochi;
+	src: url(font/gochi.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../icons/background.jpg);
+	font-family: Gochi, "Comic Sans MS", cursive;
+	font-size: 30px; 
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 350px 1fr;
+	grid-template-rows: 200px 250px 1fr;
+	grid-template-areas: 
+		". logo ."
+		"menu menu menu"
+		"contact1 . contact2";
+}
+
+/*лого*/
+
+.logo {
+	grid-area: logo;
+	text-align: center;
+}
+
+.logo img {
+	height: 100px;
+	width: 100px;
+	margin-top: 10px;
+
+}
+
+.logo a {
+	margin-top: -10px;
+	text-decoration-line: none;
+	color: black;
+}
+
+.logo a:hover {
+	color: #657083;
+	transition: .5s;
+}
+
+.logo img:hover {
+	opacity: 0.6;
+}
+
+/*меню*/
+
+.menu {
+	grid-area: menu;
+	/*margin-top: -150px;*/
+}
+
+.topmenu {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.topmenu li {
+	display: block;
+	list-style-type: none;
+}
+
+.topmenu a {
+	text-decoration-line: none;
+	color: #657083;
+	font-size: 40px;
+}
+
+.topmenu  a:hover {
+	color: #abc8d9;
+	transition: .5s;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+
+}
+
+.topmenu li:hover .submenu {
+	display: block;
+}
+
+/**/
+
+.contact1 {
+	grid-area: contact1;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	margin-left: 150px;
+}
+
+.contact1 h3 {
+	text-align: center;
+}
+
+.contact1 span {
+	color: #657083;
+}
+
+/**/
+
+.contact2 {
+	grid-area: contact2;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	margin-right: 150px;
+}
+
+.contact2 form {
+	padding: 10px;
+	text-decoration: none;
+}
+
+.contact2 h2 {
+	text-align: center;
+}
+
+.contact2 fieldset {
+   border: 0 none;
+}
+
+button {
+	margin: 0 200px;
+	font-size: 20px;
+	font-family: Gochi, "Comic Sans MS", cursive;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	background: #657083;
+	transition: 0.2s;
+	cursor: pointer;
+} 
+
+button:hover { 
+	background: #abc8d9; 
+}

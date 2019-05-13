@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Оставить отзыв</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/commentstyle.css">
+</head>
+<body>
+	<div class="container">
+		<div class="logo" title="На главную">
+			<a href="../startpage.html"><img src="../icons/puncake.png"></a>
+			<p><a href="../startpage.html">Vika More Cooking</a></p>
+		</div>
+		<div class="comment">
+			<h2>Оставьте Ваш отзыв!</h2>
+			<form 
+				action="../startpage.html" 
+	      		enctype="multipart/form-data"
+		  		autocomplete="on">
+				<fieldset>
+					<legend>Ваши впечатления от продукции</legend>
+					<input type="text" name="comment" size="50" placeholder="Введите текст">
+					<legend>Загрузить изображение</legend>
+					<input type="file" name="image" accept="image/*" multiple>
+					<legend>Оцените качество нашей продукции</legend>
+					<input type="radio" name="check" value="var1">1
+					<input type="radio" name="check" value="var2">2
+					<input type="radio" name="check" value="var3">3
+					<input type="radio" name="check" value="var4">4
+					<input checked type="radio" name="check" value="var5">5</br>
+					<button type="submit">Поделиться!</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

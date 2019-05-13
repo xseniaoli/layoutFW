@@ -1,0 +1,146 @@
+@import url("./grid.css");
+
+@font-face {
+	font-family: Gochi;
+	src: url(font/gochi.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../icons/background.jpg);
+	font-family: Gochi, "Comic Sans MS", cursive;
+	font-size: 30px; 
+}
+
+
+/*лого*/
+
+.logo {
+	text-align: center;
+}
+
+.logo img {
+	height: 100px;
+	width: 100px;
+	margin-top: 10px;
+
+}
+
+.logo a {
+	margin-top: -10px;
+	text-decoration-line: none;
+	color: black;
+}
+
+.logo a:hover {
+	color: #657083;
+	transition: .5s;
+}
+
+.logo img:hover {
+	opacity: 0.6;
+}
+
+/*menu*/
+
+.menu {
+	margin-left: 50px;
+}
+
+.topmenu li {
+	display: block;
+	list-style-type: none;
+}
+
+.topmenu a {
+	text-decoration-line: none;
+	color: #657083;
+	font-size: 40px;
+}
+
+.topmenu  a:hover {
+	color: #abc8d9;
+	transition: .5s;
+}
+
+.submenu {
+	display: none;
+}
+
+.submenu a {
+	font-size: 30px;
+}
+
+.topmenu li:hover .submenu {
+	position: static;
+	display: block;
+}
+
+/**/
+
+.col-9 {
+	margin-top: 50px;
+}
+
+.ssilka {
+	overflow: hidden;
+	text-decoration-line: none;
+    vertical-align: top;
+}
+
+.text {
+	margin-left: 20px;
+	text-align: center;
+	width: 250px;
+	font-size: 25px;
+	color: #657083;
+}
+
+.text:hover {
+	color: #a8bec6;
+}
+
+
+.img {
+	display: inline-block;
+	border: 0;
+	height: 300px;
+	width: 300px;
+	border: 5px solid #657083;
+	border-radius: 20px;
+}
+
+div > a > img:hover {
+	opacity: 0.6;
+}
+
+button {
+	margin: 0 100px;
+	font-size: 15px;
+	font-family: Gochi, "Comic Sans MS", cursive;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	background: #657083;
+	transition: 0.2s;
+	cursor: pointer;
+} 
+
+button:hover { 
+	background: #abc8d9; 
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1700px) {
+	.col-m-2 {
+        width: 50%;
+    }
+	
+    .work {
+        height: 25vw;
+        max-height: 850px;
+    }
+}

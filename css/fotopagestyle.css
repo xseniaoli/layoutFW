@@ -1,0 +1,147 @@
+@font-face {
+	font-family: Gochi;
+	src: url(font/gochi.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../icons/background.jpg);
+	font-family: Gochi, "Comic Sans MS", cursive;
+	font-size: 30px; 
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 50px;
+	grid-template-areas: 
+		". logo logo ."
+		"menu menu menu menu"
+		"works1 works1 works1 works1"
+		"works2 works2 works2 works2";
+}
+
+/*лого*/
+
+.logo {
+	grid-area: logo;
+	text-align: center;
+}
+
+.logo img {
+	height: 100px;
+	width: 100px;
+	margin-top: 10px;
+
+}
+
+.logo a {
+	margin-top: -10px;
+	text-decoration-line: none;
+	color: black;
+}
+
+.logo a:hover {
+	color: #657083;
+	transition: .5s;
+}
+
+.logo img:hover {
+	opacity: 0.6;
+}
+
+/*меню*/
+
+.menu {
+	grid-area: menu;
+	margin-top: -100px;
+}
+
+.topmenu {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.topmenu li {
+	display: block;
+	list-style-type: none;
+}
+
+.topmenu a {
+	text-decoration-line: none;
+	color: #657083;
+	font-size: 40px;
+}
+
+.topmenu  a:hover {
+	color: #abc8d9;
+	transition: .5s;
+}
+
+.submenu {
+	display: none;
+	position: absolute;
+
+}
+
+.topmenu li:hover .submenu {
+	display: block;
+}
+
+/*фото работ1*/
+
+.works1 {
+	grid-area: works1;
+	text-align: center;
+	margin-top: -100px;
+}
+
+.works1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+}
+
+.works1 img {
+	height: 300px;
+	width: 300px;
+	border: 5px solid #657083;
+	border-radius: 25px;
+}
+
+.works1 img:hover {
+	opacity: 0.6;
+}
+
+/*фото работ2*/
+
+.works2 {
+	grid-area: works2;
+	text-align: center;
+
+
+}
+
+.works2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+}
+
+.works2 img {
+	height: 300px;
+	width: 300px;
+	border: 5px solid #657083;
+	border-radius: 25px;
+}
+
+.works2 img:hover {
+	opacity: 0.6;
+}
